@@ -1,0 +1,20 @@
+{
+  "name": "fastapi-frontend-demo",
+  "version": "1.0.0",
+  "description": "TypeScript frontend demo for FastAPI backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && cp src/index.html dist/ && cp src/styles.css dist/",
+    "dev": "tsc --watch & python -m http.server 8080 --directory dist",
+    "serve": "python -m http.server 8080 --directory dist",
+    "clean": "rm -rf dist/*"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/node": "^20.8.0"
+  },
+  "dependencies": {},
+  "keywords": ["fastapi", "typescript", "frontend", "demo"],
+  "author": "FastAPI Demo",
+  "license": "MIT"
+}
